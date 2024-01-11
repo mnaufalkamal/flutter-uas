@@ -3,6 +3,7 @@ import 'package:flutter_application_1/components/error_message.dart';
 import 'package:flutter_application_1/components/info_dialog.dart';
 import 'package:flutter_application_1/components/last_update.dart';
 import 'package:flutter_application_1/components/swap_button.dart';
+import 'package:flutter_application_1/homepage.dart';
 import 'package:flutter_application_1/models/exchange_rates.dart';
 import 'package:flutter_application_1/select_currency.dart';
 import 'package:flutter_application_1/utils/constant.dart';
@@ -94,11 +95,14 @@ class _ExchangePageState extends State<ExchangePage> {
             style: kTitleTextStyle,
           ),
           leading: IconButton(
-      icon: Icon(Icons.arrow_back),
-      onPressed: () {
-        // Aksi yang akan dilakukan ketika tombol kembali ditekan.
-        Navigator.pop(context);
-      },
+          icon: Icon(
+          Icons.arrow_back,
+          color: Colors.black, // Ubah warna ikon sesuai keinginan Anda
+          ),
+            onPressed: () {
+            // Aksi yang akan dilakukan ketika tombol kembali ditekan.
+            Navigator.push(context, MaterialPageRoute(builder: (context) => Dashboard()));
+            },
       ),
           actions: <Widget>[
             Padding(

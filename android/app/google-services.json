@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "39289379271",
+    "firebase_url": "https://uaspemmob-f5fb1-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "uaspemmob-f5fb1",
+    "storage_bucket": "uaspemmob-f5fb1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:39289379271:android:d41ddaa77a9085ef9da1e2",
+        "android_client_info": {
+          "package_name": "com.example.flutter_application_1"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDHFzIlfaLlzfz8TOB_dfqyYnWLNU_cdKw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

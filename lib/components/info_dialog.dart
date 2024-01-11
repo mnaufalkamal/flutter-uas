@@ -44,16 +44,6 @@ class InfoDialog extends StatelessWidget {
             SizedBox(
               height: 8,
             ),
-            Text('MajalengkaDev', style: TextStyle(color: Colors.black45)),
-            GestureDetector(
-              onTap: () {
-                _launchURL('https://majalengkadev.github.io');
-              },
-              child: Text(
-                'https://majalengkadev.github.io',
-                style: TextStyle(fontSize: 13, color: Colors.lightBlueAccent),
-              ),
-            ),
           ],
         ),
       ),

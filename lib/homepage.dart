@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/bmikalkulator.dart';
+import 'package:flutter_application_1/crud.dart';
 import 'package:flutter_application_1/devprofile.dart';
 import 'package:flutter_application_1/exchange_page.dart';
+import 'package:flutter_application_1/infogempa.dart';
 import 'package:flutter_application_1/kalkulator.dart';
 
 class Dashboard extends StatefulWidget {
@@ -118,6 +120,54 @@ class _DashboardState extends State<Dashboard>{
               ),
             ),
           ),
+          Card(
+            margin: const EdgeInsets.all(8),
+            child: InkWell(
+              onTap: (){
+                Navigator.pushReplacement(context,
+                 MaterialPageRoute(builder:
+                                 (context) =>
+                                 infogempa()
+                                 )
+                );
+              },
+  
+              splashColor: Colors.blue,
+              child: Center(
+                child: Column(
+                  mainAxisSize: MainAxisSize.min,
+                  children: const <Widget>[
+                    Icon(Icons.warning_rounded, size: 70, color: Color.fromARGB(107, 248, 0, 0),),
+                    Text("Info Gempa Terkini", style: TextStyle(fontSize: 17.0)),
+                  ],
+                ),
+              ),
+            ),
+          ),
+          Card(
+            margin: const EdgeInsets.all(8),
+            child: InkWell(
+              onTap: (){
+                Navigator.pushReplacement(context,
+                 MaterialPageRoute(builder:
+                                 (context) =>
+                                CRUD ()
+                                 )
+                );
+              },
+  
+              splashColor: Colors.blue,
+              child: Center(
+                child: Column(
+                  mainAxisSize: MainAxisSize.min,
+                  children: const <Widget>[
+                    Icon(Icons.note_alt_rounded, size: 70, color: Color.fromARGB(107, 0, 248, 170),),
+                    Text("CRUD", style: TextStyle(fontSize: 17.0)),
+                  ],
+                ),
+              ),
+            ),
+          ),
         ],
       ),
       bottomNavigationBar: BottomNavigationBar(
@@ -155,5 +205,3 @@ class _DashboardState extends State<Dashboard>{
     );
   }
 }
-
-

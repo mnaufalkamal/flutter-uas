@@ -53,9 +53,20 @@ Widget build(BuildContext context) {
 	double height = MediaQuery.of(context).size.height;
 
 	return Scaffold(
+    appBar: AppBar(
+      title: Text('BMI Kalkulator'),
+        leading: IconButton(
+          icon: Icon(Icons.arrow_back),
+          onPressed: () {
+            // Navigasi kembali ke halaman sebelumnya saat tombol "back" ditekan
+            Navigator.push(context, MaterialPageRoute(builder: (context) => Dashboard()));
+          },      
+    ),
+    ),
 	body: SingleChildScrollView(
 		child: Center(
 		child: Container(
+      
 			height: height,
 			decoration: BoxDecoration(
 				gradient: LinearGradient(
@@ -76,6 +87,7 @@ Widget build(BuildContext context) {
 				SizedBox(
 					height: 30,
 				),
+        
 				Padding(padding: const EdgeInsets.only(left: 15,right: 15,top: 10),
 					child: TextField(
 					controller: weight_Controller,

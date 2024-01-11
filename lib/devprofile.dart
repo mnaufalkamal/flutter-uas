@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/homepage.dart';
 
 
 
@@ -11,7 +12,7 @@ class DeveloperProfilePage extends StatelessWidget {
       leading: IconButton(
       icon: Icon(Icons.arrow_back),
       onPressed: () {
-        Navigator.of(context).pop(); // Kembali ke halaman sebelumnya
+        Navigator.push(context, MaterialPageRoute(builder: (context) => Dashboard()));
       },
     ),  
       ),
